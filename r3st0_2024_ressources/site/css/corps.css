@@ -1,0 +1,63 @@
+/* Modernisation de corps.css */
+
+/* Tags */
+#tagFood {
+    display: inline-block;
+    padding-left: 0;
+    font-style: italic;
+    margin: 0;
+}
+
+li.tag {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+li.tag:hover {
+    border-color: var(--coulB1);
+    background-color: var(--coulA2);
+    color: white;
+}
+
+/* Cartes */
+div.card {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+div.card:hover {
+    transform: scale(1.05);
+}
+
+/* Images dans les cartes */
+div.photoCard > img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Galerie */
+#galerie {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
